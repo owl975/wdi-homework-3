@@ -1,0 +1,29 @@
+var securityQuestions = [{ question: "favorite animal?", expectedAnswer: "dog"} , { question : "what state did you grow up" ,  expectedAnswer: "CA"},{ question: "who is your boyfriend", expectedAnswer: "Jon" }];
+
+function PasswordProtection() {
+
+var clearance0 = prompt(securityQuestions[0].question);
+
+if (clearance0 === securityQuestions[0].expectedAnswer){
+    var clearance1 = prompt(securityQuestions[1].question);
+        if (clearance1 === securityQuestions[1].expectedAnswer){
+            var clearance2 = prompt(securityQuestions[2].question);
+                if (clearance2 === securityQuestions[2].expectedAnswer){
+                    alert("welcome Mr. Gomez");
+                }
+                else {
+                    alert("incorrect, goodbye");
+                }
+        }
+        else {
+            alert("incorrect, goodbye");
+        }
+}
+else {
+    alert("incorrect, goodbye");
+}
+}
+
+PasswordProtection();
+
+
